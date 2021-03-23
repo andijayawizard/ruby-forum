@@ -1,0 +1,7 @@
+<h3>
+  Edit Buku
+</h3>
+<%= link_to 'Lihat Buku', books_path %> |
+<%= link_to 'Tambah Buku', new_book_path %>
+<%#= render 'form' %>
+<%= render partial: 'form', locals: {button_text: 'Simpan perubahan'} %>

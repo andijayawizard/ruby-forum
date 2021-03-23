@@ -1,0 +1,25 @@
+<h3>
+  <%= @student.name %>
+</h3>
+<%= link_to 'Lihat Siswa', students_path %> |
+<%= link_to 'Tambah Siswa', new_student_path %>
+<table class="table table-sm">
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td><%= @student.name %></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><%= @student.email %></td>
+    </tr>
+    <tr>
+      <td>Telephone</td>
+      <td><%= @student.phone %></td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td><%= @student.address %></td>
+    </tr>
+  </tbody>
+</table>

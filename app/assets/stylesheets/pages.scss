@@ -1,0 +1,26 @@
+.table-container {
+  #dynamic-table {
+    text-align: left;
+  }
+}
+.bgCerah {
+  // color: lighten(black, 25%);
+  background: lighten(red, 25%);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+h3 {
+  color: lighten(black, 25%);
+  small {
+    font-style: italic;
+  }
+}
+.notice {
+  color: white;
+  background-color: lighten(red, 25%);
+  padding: 8px;
+}
+.field_with_errors {
+  display: inline;
+}

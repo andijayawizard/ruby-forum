@@ -1,0 +1,32 @@
+<h3>
+  Detail Buku
+  <small>
+    <%= @book.title %>
+  </small>
+</h3>
+<%= link_to 'Lihat Buku', books_path %> |
+<%= link_to 'Tambah Buku', new_book_path %>
+<table class="table table-sm">
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td><%= @book.title %></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><%= @book.description %></td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><%= @book.price %></td>
+    </tr>
+    <tr>
+      <td>Pages</td>
+      <td><%= @book.page %></td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td><%= @book.year %></td>
+    </tr>
+  </tbody>
+</table>

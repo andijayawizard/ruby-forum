@@ -1,0 +1,53 @@
+<% if @student.errors.any? %>
+  <% @student.errors.full_messages.each do |error| %>
+    <div>
+      <%= error %>
+    </div>
+  <% end %>
+<% end %>
+<%= form_for @student do |f| %>
+  <div>
+    <%= f.label :name %>
+    <br>
+    <%= f.text_field :name %>
+    <% if @student.errors[:name] %>
+      <%= @student.errors[:name].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.label :nim %>
+    <br>
+    <%= f.text_field :nim %>
+    <% if @student.errors[:nim] %>
+      <%= @student.errors[:nim].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.label :email %>
+    <br>
+    <%= f.text_field :email %>
+    <% if @student.errors[:email] %>
+      <%= @student.errors[:email].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.label :phone %>
+    <br>
+    <%= f.text_field :phone %>
+    <% if @student.errors[:phone] %>
+      <%= @student.errors[:phone].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.label :address %>
+    <br>
+    <%= f.text_field :address %>
+    <% if @student.errors[:address] %>
+      <%= @student.errors[:address].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.submit button_text %>
+    <br>
+  </div>
+<% end %>

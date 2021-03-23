@@ -1,0 +1,5 @@
+<h3 class="capitalize">tambah siswa</h3>
+<%= link_to 'Lihat Siswa', students_path, class: 'link' %> |
+<%= link_to 'Tambah Siswa', new_student_path, class: 'link' %>
+<%#= render 'form' %>
+<%= render partial: 'form', locals: {button_text: 'Simpan perubahan'} %>
